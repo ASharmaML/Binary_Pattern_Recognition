@@ -14,7 +14,8 @@ library(rpart.plot)
 
 
 set.seed(1)
-data <- read.table("http://www2.imperial.ac.uk/~eakc07/S7/data4.dat",quote="\"'")
+setwd("C:/Users/Aseem/Documents/GitHub/Binary_Pattern_Recognition")
+data <- read.table("project3data.txt")
 data.r <- sort(sample(dim(data)[1],100,FALSE))
 data.te <- as.data.frame(data[data.r,])
 
